@@ -1,0 +1,198 @@
+/* Basic styling */
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #0c0c0c;
+  color: #fff;
+}
+
+/* Header styling */
+header {
+  background-color: #1e272e;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #3498db;
+}
+
+/* Banner section */
+.banner {
+  background-image: url('images/banner-image.jpg');
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  padding: 150px 0;
+}
+
+.banner h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #f39c12;
+}
+
+.banner p {
+  font-size: 18px;
+  color: #ecf0f1;
+}
+
+/* About section */
+.about {
+  padding: 60px;
+  background-color: #1e272e;
+  text-align: center;
+}
+
+/* Players section */
+.players {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.player-card {
+  width: 220px;
+  margin: 20px;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #2c3e50;
+  color: #fff;
+}
+
+.player-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+.player-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px 10px 0 0;
+}
+
+.player-card h3 {
+  padding: 10px;
+  text-align: center;
+  border-radius: 0 0 10px 10px;
+  background-color: #3498db;
+}
+
+/* Player details overlay */
+#player-details-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+#player-details {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+  position: relative;
+  max-width: 80%;
+}
+
+#player-name {
+  font-size: 24px;
+  color: #3498db;
+  margin-bottom: 10px;
+}
+
+#player-bio {
+  color: #444;
+  line-height: 1.5;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #0c0c0c;
+}
+
+/* Fixed header */
+.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #1e272e;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+.fixed-header h1,
+.fixed-header nav ul li a {
+  transition: color 0.3s ease;
+}
+
+/* Apply smooth transitions to various elements */
+.header-transition,
+nav ul li a,
+.banner h2,
+.banner p,
+.about h2,
+.about p,
+.players h2,
+.player-card {
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+/* Apply smooth transitions to the player details overlay */
+#player-details-overlay,
+#player-details {
+  transition: opacity 0.3s ease;
+}
+
+/* Centered footer */
+.centered-footer {
+  text-align: center;
+  background-color: rgb(26, 26, 26);
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 3px 0; /* Add padding here */
+  margin-top: auto; 
+}
+
+
+/* Add text shadow to headers */
+h1, h2, h3 {
+  text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.5);
+}
+
+

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <title>Final Words</title>
+</head>
+<body>
+  <header>
+    <h1>Final Words Esports</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="matches.html">Matches</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <section class="banner">
+    <h2>Welcome to our Esports Team!</h2>
+    <p>We are a dedicated team of gamers ready to conquer the digital battlefield.</p>
+  </section>
+
+  <section class="about">
+    <div class="about-content">
+      <h2>About Us</h2>
+      <p>Welcome to Final Words Esports, your hub for competitive Valorant gaming! We're a team driven by a shared passion for esports excellence, dedicated to dominating the digital battlefield and making our mark in the competitive world of Valorant.</p>
+      <p>From intense firefights to precision plays and innovative strategies, our team thrives on the excitement of competition and the pursuit of victory. Join us on our journey as we work towards etching our legacy in the world of Valorant esports.</p>
+    </div>
+  </section>
+  <br>
+  <h2 style="text-align: center;">Our Players</h2>
+  <section class="players">
+
+    <div class="player-card" onclick="showPlayerDetails('player1')">
+      <img src="img/maple.jpg" alt="Player 1">
+      <h3>Maple</h3>
+    </div>
+    <div class="player-card" onclick="showPlayerDetails('player2')">
+      <img src="img/zvarved.png" alt="Player 2">
+      <h3>Zvar</h3>
+    </div>
+    <div class="player-card" onclick="showPlayerDetails('player3')">
+        <img src="img/johnty.jpg" alt="Player 3">
+        <h3>J0hnty</h3>
+      </div>
+      <div class="player-card" onclick="showPlayerDetails('player4')">
+        <img src="img/index.jpg" alt="Player 4">
+        <h3>Index</h3>
+      </div>
+      <div class="player-card" onclick="showPlayerDetails('player5')">
+        <img src="img/IW.jpg" alt="Player 5">
+        <h3>ImagineWhisp</h3>
+      </div>
+      <div class="player-card" onclick="showPlayerDetails('player6')">
+        <img src="img/bodker.jpg" alt="Player 6">
+        <h3>B0dker</h3>
+      </div>
+    <!-- Add more player cards as needed -->
+  </section>
+
+  <div id="player-details-overlay">
+    <div id="player-details">
+      <span class="close-button" onclick="hidePlayerDetails()">&times;</span>
+      <h2 id="player-name"></h2>
+      <p id="player-bio" style="font-weight: bold;"></p>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+<br>
+  <footer class="centered-footer">
+    <p>&copy; 2023 Final Words Esports. All rights reserved.</p>
+  </footer>
+
+  <script src="js/intprofiles.js"></script>
+</body>
+</html>
