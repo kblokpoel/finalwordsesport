@@ -26,11 +26,11 @@ function showPlayerDetails(playerId) {
     const players = {
       'player1': {
         name: 'Maple',
-        bio: 'Sentinel player: Cypher, Killjoy',
+        bio: 'Sentinel: Cypher, Killjoy',
       },
       'player2': {
         name: 'Zvar',
-        bio: 'Smokes player: Brimstone, Astra, Harbor, Viper',
+        bio: 'Controller: Brimstone, Astra, Harbor, Viper',
       },
       'player3': {
         name: 'J0hnty',
